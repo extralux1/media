@@ -1,0 +1,97 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<title>Server Lux</title>
+<script type="text/javascript">
+</script><link rel="stylesheet" href="https://extralux1.github.io/media/styles3.css">
+</head>
+<body>
+<div id="container">
+<div id="player">
+<audio id="audio">
+<source src="https://mhpanel.mediahosting025.com:8060/stream" type="audio/mpeg" codecs="mp3">		
+</audio>
+<div class="cover">
+<div class="controls"></div>
+<div style="position: absolute;  
+vertical-align: top;  
+text-align: left; 
+top: 11px;  
+left: 0px;">
+<button id="play-pause" title="Upali" onclick="togglePlayPause()"><i class="fa fa-play fa-3x"></i></button>
+</div></div>
+<div style="position: absolute;  
+vertical-align: top;  
+text-align: left; 
+top: 22px;  
+left: 52px;">
+<input id="volume" name="volume" min="0" max="1" step="0.1" type="range" onchange="setVolume()">
+</div>
+<script src="https://extralux1.github.io/media/script.js"></script>
+
+
+
+
+
+</div>
+<script>
+        window.oncontextmenu = function () {
+            console.log("Right Click Disabled");
+            return false;
+        }
+    </script>
+    
+    </script>
+  
+
+
+ <script>
+
+
+		var message="Isključeno kopiranje i desni klik!";
+
+		function clickIE4(){
+		if (event.button==2){
+		alert(message);
+		return false;
+		}
+		}
+
+		function clickNS4(e){
+		if (document.layers||document.getElementById&&!document.all){
+		if (e.which==2||e.which==3){
+		alert(message);
+		return false;
+		}
+		}
+		}
+
+		if (document.layers){
+		document.captureEvents(Event.MOUSEDOWN);
+		document.onmousedown=clickNS4;
+		}
+		else if (document.all&&!document.getElementById){
+		document.onmousedown=clickIE4;
+		}
+
+		document.oncontextmenu=new Function("alert(message);return false")
+</script>	
+
+
+
+
+
+<script>
+
+
+		function disableselect(e){
+		return false
+		}
+		function reEnable(){
+		return true
+		}
+		document.onselectstart=new Function ("return false")
+		if (window.sidebar){
+		document.onmousedown=disableselect
+		document.onclick=reEnable
+		}
+</script>  
