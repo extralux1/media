@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+body {
+  background: transparent;
+  overflow: hidden;
+  font: 10vw/80vh "Finger Paint";
+  text-align: center;
+  color: transparent;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+span {
+  display: inline-block;
+  text-shadow: 255 255 255  whitesmoke;
+  -webkit-animation: smoky 15s 13s both;
+          animation: smoky 15s 13s both;
+}
+
+span:nth-child(even) {
+  -webkit-animation-name: smoky-mirror;
+          animation-name: smoky-mirror;
+}
+
+@-webkit-keyframes smoky {
+  30% {
+    text-shadow: 0 255 30px whitesmoke;
+  }
+  to {
+    transform: translate3d(0rem, 0rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 255 0px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky {
+  30% {
+    text-shadow: 0 255 0px whitesmoke;
+  }
+  to {
+    transform: translate3d(15rem, -220rem, 0) rotate(-80deg) skewX(140deg) scale(1.0);
+    text-shadow: 0 255 0px whitesmoke;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes smoky-mirror {
+  30% {
+    text-shadow: 255 0 10px whitesmoke;
+  }
+  to {
+    transform: translate3d(18rem, -220rem, 0) rotate(-80deg) skewX(-140deg) scale(1.0);
+    text-shadow: 255 255 0px whitesmoke;
+    opacity: 0;
+  }
+}
+@keyframes smoky-mirror {
+  30% {
+    text-shadow: 255 255 0px whitesmoke;
+  }
+  to {
+    transform: translate3d(18rem, -220rem, 0) rotate(-80deg) skewX(-140deg) scale(1.0);
+    text-shadow: 255 255 0px whitesmoke;
+    opacity: 0;
+  }
+}
+span:nth-of-type(1) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+span:nth-of-type(2) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+span:nth-of-type(3) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+span:nth-of-type(4) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+span:nth-of-type(5) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+span:nth-of-type(6) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+span:nth-of-type(7) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+span:nth-of-type(8) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+span:nth-of-type(9) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+span:nth-of-type(10) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+span:nth-of-type(11) {
+  -webkit-animation-delay: 4.1s;
+          animation-delay: 4.1s;
+}
+
+span:nth-of-type(12) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+span:nth-of-type(13) {
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+}
+
+span:nth-of-type(14) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+span:nth-of-type(15) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+span:nth-of-type(16) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+span:nth-of-type(17) {
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+}
+
+span:nth-of-type(18) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+span:nth-of-type(19) {
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+}
+
+span:nth-of-type(20) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+span:nth-of-type(21) {
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+}
